@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example Server — Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="topbar">
+    <a class="brand" href="index.html">Utility Bot</a>
+    <div class="nav-links">
+      <a href="servers.html">Servers</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="login.html">Login with Discord</a>
+    </div>
+  </nav>
+  <main class="container">
+    
+<h1>Example Server</h1>
+
+<section class="card">
+  <h2>Live Stats</h2>
+  <div class="stats-grid">
+    <div class="stat"><span class="stat-value">1</span><span class="stat-label">Guilds</span></div>
+    <div class="stat"><span class="stat-value">Online</span><span class="stat-label">Uptime</span></div>
+    <div class="stat"><span class="stat-value">0</span><span class="stat-label">Active Voice Sessions</span></div>
+    <div class="stat"><span class="stat-value">—</span><span class="stat-label">Gateway Latency</span></div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Modules</h2>
+  <form onsubmit="event.preventDefault(); alert('Saved locally for this demo. A backend is required to save bot configuration.');">
+    <div class="toggle-row">
+      <label class="switch"><input type="checkbox" checked><span class="slider"></span></label>
+      <span>Music</span>
+    </div>
+    <div class="toggle-row">
+      <label class="switch"><input type="checkbox" checked><span class="slider"></span></label>
+      <span>Auto-Moderation</span>
+    </div>
+    <div class="toggle-row">
+      <label class="switch"><input type="checkbox" checked><span class="slider"></span></label>
+      <span>Logging</span>
+    </div>
+
+    <h2>Mod-Log Channel</h2>
+    <select><option>-- none --</option><option>#mod-logs</option><option>#server-logs</option></select>
+
+    <h2>Auto-Mod Keyword List</h2>
+    <p class="muted">Comma-separated. Exact substring match, case-insensitive.</p>
+    <textarea rows="3" placeholder="keyword1, keyword2"></textarea>
+
+    <h2>Spam Thresholds</h2>
+    <div class="field-row">
+      <label>Messages<input type="number" value="5" min="1" max="50"></label>
+      <label>Window (seconds)<input type="number" value="10" min="1" max="120"></label>
+      <label>Mention limit<input type="number" value="5" min="1" max="50"></label>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Save Changes</button>
+  </form>
+</section>
+
+<section class="card">
+  <h2>Recent Mod Actions</h2>
+  <p class="muted">No actions logged yet.</p>
+</section>
+
+  </main>
+  <footer class="footer">
+    Rule-based moderation and playback only · no AI/ML is used anywhere in this bot.
+    <br>
+    <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</body>
+</html>
