@@ -1,6 +1,9 @@
+```js
 exports.handler = async function(event) {
   const clientId = "1477546371665105068";
-  const redirectUri = "https://taupe-seahorse-7784d8.netlify.app/.netlify/functions/discord-callback";
+
+  const redirectUri =
+    "https://taupe-seahorse-7784d8.netlify.app/.netlify/functions/discord-callback";
 
   const discordUrl =
     `https://discord.com/oauth2/authorize?client_id=${clientId}` +
@@ -15,3 +18,4 @@ exports.handler = async function(event) {
     }
   };
 };
+```
