@@ -1,4 +1,4 @@
-```toml
+toml
 [functions]
   directory = "netlify/functions"
-```
+
