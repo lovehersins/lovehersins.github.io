@@ -6,30 +6,55 @@
   <title>Login — Utility Bot</title>
   <link rel="stylesheet" href="style.css">
 </head>
+ 
 <body>
+ 
   <nav class="topbar">
     <a class="brand" href="index.html">Utility Bot</a>
+ 
     <div class="nav-links">
       <a href="servers.html">Servers</a>
       <a href="terms.html">Terms of Service</a>
       <a href="privacy.html">Privacy Policy</a>
-     <a href="/.netlify/functions/discord-auth"/>Login With Discord</a>
-    
+ 
+      <a href="/.netlify/functions/discord-auth">
+        Login With Discord
+      </a>
     </div>
   </nav>
+ 
+ 
   <main class="container">
-    
-<div class="card centered">
-  <h1>Utility Bot Dashboard</h1>
-  <p>Manage music, moderation, and logging for servers you administer.</p>
-  <a class="btn btn-primary" href="#" onclick="alert('Discord OAuth requires a backend and cannot run on GitHub Pages alone.'); return false;">Login with Discord</a>
-</div>
-
+ 
+    <div class="card centered">
+      <h1>Utility Bot Dashboard</h1>
+ 
+      <p>
+        Manage music, moderation, and logging for servers you administer.
+      </p>
+ 
+      <a 
+        class="btn btn-primary"
+        href="/.netlify/functions/discord-auth">
+        Login with Discord
+      </a>
+ 
+    </div>
+ 
   </main>
+ 
+ 
   <footer class="footer">
     Rule-based moderation and playback only · no AI/ML is used anywhere in this bot.
+ 
     <br>
-    <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a>
+ 
+    <a href="terms.html">Terms of Service</a>
+    ·
+    <a href="privacy.html">Privacy Policy</a>
+ 
   </footer>
+ 
+ 
 </body>
 </html>
